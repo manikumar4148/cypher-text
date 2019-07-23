@@ -1,0 +1,19 @@
+<h3 align="center">Encryption & Decryption</h3>
+<br>
+<br><form align="center">
+<input id="text" name="text" class="form-control" placeholder="enter string"
+  required 
+  [(ngModel)]="data.estring" #text="ngModel" >
+
+  <button (click)="encryptt()">Encrypt</button><br>
+  Encrypted Data: {{chiperText}}
+<br><br>
+<input id="text1" name="text1" class="form-control" placeholder="paste encrypted data here"
+required 
+[(ngModel)]="data.dstring" #text1="ngModel" >
+
+<button (click)="decryptt()">Decrypt</button><br>
+Decrypted Data: {{decipherText}}
+</form>
+
+<router-outlet></router-outlet>
